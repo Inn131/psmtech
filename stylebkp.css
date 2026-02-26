@@ -1,0 +1,213 @@
+/*
+Theme Name: psmtech
+Description:  Child Theme
+Author: wordpress theme
+Template: twentytwentytwo
+Version: 1.0.0
+*/
+
+
+
+p{font-weight: 500;}
+body{background: #fff !important;}
+.secondHeaderRightSide{flex-direction: row !important;}
+header.entry-header.alignwide, footer.entry-footer.default-max-width{ display: none;}
+.elementor.elementor-7{max-width: 1230px !important; padding: 0 15px;}
+button.sub-menu-toggle { display: none;}
+body.sticky-header-main .headerBottom { position: fixed;  width: 100%; z-index: 999999;  padding-top: 25px;}
+.headerBottom{box-shadow: 0 0 10px 0 #002b5c14;}
+body .hfe-submenu-icon-arrow .hfe-nav-menu .parent-has-child .sub-arrow i:before{  content: "▼"; font-style: normal;  font-size: 9px;}
+body .hfe-submenu-icon-arrow .hfe-nav-menu__layout-horizontal .menu-item-has-children .sub-menu-active a .sub-arrow i:before{content: '▲' !important;}
+
+@media screen and (max-width: 1025px){
+	.headerTop{display: none;}
+	.headerBottom{padding: 0}
+	.eConInner22 .hederBottomTwoParts .e-con-inner .secondHeaderRightSide {  position: absolute; width: 50% !important;  right: 0;  background: #25599e; height: 100vh;  top: 0; margin-top: -15px;}
+	/*.eConInner22 .hederBottomTwoParts .e-con-inner .secondHeaderRightSide > div{width: 50%;}*/
+	/*.eConInner22 .hederBottomTwoParts .e-con-inner .secondHeaderRightSide nav{margin: 0px 15px;}*/
+	.hederLogoImg {z-index: 99}
+	.eConInner22 .hederBottomTwoParts .e-con-inner .secondHeaderRightSide a.hfe-menu-item,.eConInner22 .hederBottomTwoParts .e-con-inner .secondHeaderRightSide a.hfe-sub-menu-item{ background: #25599e !important;  color: #fff !important;}
+	.hederBottomNav{height: inherit;}
+	/*.headerBottom > .e-con-inner{padding-top: 0 !important;}*/
+	.eConInner22 .hfe-nav-menu-icon svg{fill: #fff}
+	.eConInner22 .hfe-nav-menu-icon {margin: 30px 15px 10px;}
+}
+@media screen and (max-width: 334px){
+	.hederLogoImg{max-width: 100px !important;}
+}
+@media screen and (max-width: 290px){
+	.hederLogoImg{max-width: 80px !important;}
+}
+.hederLogoImg, .hederLogoImg img{width: 100% !important}
+
+
+/*Home Banner*/
+.homeBannerSlider {
+    height: 75vh;
+}
+@media screen and (min-width: 1500px){
+	.homeBannerSlider {
+	    height: 60vh;
+	}
+	.homeBannerImg{height: 390px !important;}
+}
+.homeBannerFirstText{font-weight: 700; letter-spacing: 0px; color: #000;}
+.homeBannerHead{line-height: normal; letter-spacing: 0px; font-weight: 900;  font-size: 38px;}
+.homeBannerDes p{color: rgb(70, 70, 70); letter-spacing: 0px;}
+.homeBannerRightBgImg{position: absolute; top: 50%; right: 0; z-index: 2;}
+.homeBannerInner .slick-arrow:before{color: #25599e !important;}
+.homeBannerInner .slick-next{right: 0px !important;}
+.homeBannerInner .slick-prev{left: 0px !important;}
+.homeBannerImg {object-fit: cover; height: 85vh;  z-index: 9;}
+.home_banner_get_in_touch_link{background-color: var(--base-skin); color: rgb(255, 255, 255); text-align: center;  line-height: 24px; letter-spacing: 0px; font-weight: 500;  font-size: 16px; padding: 11px 29px; opacity: 1; transform: translate(0px, 0px);}
+.home_banner_get_in_touch_link:hover{background: #000; color: #fff;}
+.home_banner_watch_video i{text-align: center;  line-height: 46px;  letter-spacing: 0px; font-weight: 400; font-size: 36px; }
+.home_banner_watch_video i:before{color: var(--base-skin);}
+.home_banner_watch_video i:hover:before{color: #000;}
+.home_banner_2_link{  align-items: center;  gap: 30px;}
+.home_banner_watch_video{display: flex;  align-items: center;  gap: 10px; text-align: left;  line-height: 28px; letter-spacing: 0px;  font-weight: 700; font-size: 16px;}
+.homeBannerSlider{position: relative;}
+/*Home portfolio*/
+li.tab.portfolio-tab.uncategorized { display: none;}
+@media screen and (max-width: 1026px){
+	.homeBannerFirstText{font-size: 13px; line-height: 23px;}
+	.homeBannerHead{font-size: 35px !important;}
+	.homeBannerSlider { height: 35vh; justify-content: center;}
+	.homeBannerInner .slick-prev { left: 15px !important;}
+	.homeBannerInner .slick-next { right: 15px !important;}
+}
+@media screen and (max-width: 777px){
+	.home_banner_watch_video_main{display: none;}
+	.leftBannerSide{width: 100% !important; flex: 0 0 auto !important; text-align: center;}
+	.home_banner_2_link{flex-direction: column;}
+	.home_banner_get_in_touch_link_main{height: 42px;}
+	.homeBannerHead{font-size: 30px !important;}
+	.homeBannerFirstText, .homeBannerDes p{font-size: 14px; line-height: 22px;}
+	.homeBannerSlider .rightBannerSide{ position: absolute !important; top: 0; z-index: -1;opacity: 0.2;}
+}
+@media screen and (max-width: 600px){
+	.homeBannerHead{font-size: 28px !important;}
+}
+@media screen and (max-width: 545px){
+	.homeBannerHead{font-size: 24px !important;}
+}
+@media screen and (max-width: 479px){
+	.homeBannerSlider{padding: 15px 0px;}
+	.homeBannerDes{display: none;}
+	.homeBannerHead{font-size: 24px !important;}
+	.homeBannerSlider { height: 65vh;}
+}
+
+/*Contact Us*/
+.contactUsForm .wpcf7-response-output{ margin: 0 !important;}
+.contactUsForm .wpcf7-spinner{display: none;}
+.contactUsForm .submitting .wpcf7-spinner{display: block; padding-top: 5px;}
+
+/*Blog Details*/
+.postCommentBtn { border-color: #000 !important; color: #000 !important; line-height: 16px !important;}
+.postCommentBtn:hover{ border-color: #25599e !important; color: #25599e !important;}
+
+/*Footer*/
+.recentPostFooter a, .recentPostFooter h5, .recentPostFooter a:hover{color: #fff !important; font-size: 14px; line-height: 22px;}
+.recentPostFooter h5{margin-bottom: 0; padding-bottom: 20px; font-size: 20px; line-height: 30px;}
+.recentPostFooter ul{list-style-type: none;}
+.recentPostFooter li{padding-bottom: 10px;}
+.listBeforeArrow a:before{	content: '\e80f';  font-family: 'fontello';	position: absolute;	color: #fff;	left: 0;	opacity: 1 !important;	background: unset !important;}
+.listBeforeArrow a{position: relative; padding-left: 20px !important; display: flex;}
+@media screen and (max-width: 767px){
+	.FooterTop .elementor-widget-container, .recentPostFooter h5{	padding: 0px !important;	}
+	.FooterTop .elementor-widget-container > h5{padding: 20px 0 8px !important;	}
+	.FooterTop  li{	padding: 0 0 5px !important;}
+}
+.FooterTop  li:last-child{padding-bottom: 0}
+@media only screen and (max-width: 767px) and (min-width: 825px){
+	.FooterTop .footerFourCol {display: block;}
+}
+
+.iconGalleryImg .logoImg29{/*max-width: 9%;*/ box-shadow: 0px 0px 10px 4px #00000012; padding: 2px; margin: 5px}
+.iconGalleryImg .logoImg29Row{gap: 10px; align-items: center; margin: 0 auto !important;}
+.logoImg29 img {
+    height: 50px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.iconGalleryImgRow:last-child .dividerLine{display: none;}
+.psmtech_channel_partner{background-image: url(./images/PSMTECH-CHANNEL-PARTNER.jpeg);  background-repeat: no-repeat; background-size: cover; background-position: center;}
+.psmtech_channel_partner_inner{background-color: #0009;	padding: 50px 0;}
+.homeBannerMain{background-image: url("https://inngeniuspsm.com/psmtest/wp-content/uploads/2025/04/it-solution-slick-bg.png"); background-repeat: no-repeat; background-size: 100%;}
+@media screen and (max-width: 1025px){
+	/*.iconGalleryImg .logoImg29{max-width: 15%}*/
+	.iconGalleryImg .logoImg29Row{justify-content: center; padding: 10px;}
+}
+@media screen and (max-width: 450px){
+	/*.iconGalleryImg .logoImg29{max-width: 30%}*/
+}
+.portfolio-section .project_item img.img-fluid { height: 230px; object-fit: cover;}
+.productMain30{ row-gap:30px; }
+
+
+/* Slider 4 Animation */
+.sliderOneBanner1{position: relative;}
+.sliderOneBanner1 .night{ position: absolute; width: 100%; height: 100%; transform: rotateZ(40deg); top: 0;}
+.sliderOneBanner1 .star{ position: absolute; left: 50%; top: 50%; height: 4px; background: linear-gradient(-45deg, #5F91FF, rgba(0, 0, 255, 0)); border-radius: 999px; filter: drop-shadow(0 0 6px #699BFF); animation: tail 3s ease-in-out infinite,   falling 3s ease-in-out infinite;}
+@keyframes tail{
+  0%{ width: 0;}
+  30%{width: 100px;}
+  100%{ width: 0; }
+}
+@keyframes falling{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(300px); }
+}
+.sliderOneBanner1 .star::before,  .sliderOneBanner1 .star::after{ content: ''; position: absolute; top: calc(50% - 2px); right: 0; height: 4px; background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5F91FF, rgba(0, 0, 255, 0)); border-radius: 100%; transform: translateX(50%) rotateZ(45deg); animation: shining 3s ease-in-out infinite;}
+@keyframes shining{
+  0%{ width: 0; }
+  50%{ width: 30px; }
+  100%{ width: 0;}
+}
+.sliderOneBanner1 .star::after{ transform: translateX(50%) rotateZ(-45deg);}
+.sliderOneBanner1 .star:nth-child(1){ top: calc(50% - 100px); left: calc(50% - 250px); animation-delay: 1s;}
+.sliderOneBanner1 .star:nth-child(1)::before, .star:nth-child(1)::after{ animation-delay: 1s;}
+.sliderOneBanner1 .star:nth-child(2){ top: calc(50% - 50px); left: calc(50% - 200px); animation-delay: 1.2s;}
+.sliderOneBanner1 .star:nth-child(2)::before, .sliderOneBanner1 .star:nth-child(2)::after{ animation-delay: 1.2s;}
+.sliderOneBanner1 .star:nth-child(3){ top: calc(50% - 0px); left: calc(50% - 150px); animation-delay: 1.4s;}
+.sliderOneBanner1 .star:nth-child(3)::before, .sliderOneBanner1 .star:nth-child(3)::after{ animation-delay: 1.4s;}
+.sliderOneBanner1 .star:nth-child(4){ top: calc(50% - -50px); left: calc(50% - 200px); animation-delay: 1.6s;}
+.sliderOneBanner1 .star:nth-child(4)::before, .sliderOneBanner1 .star:nth-child(4)::after{ animation-delay: 1.6s;}
+.sliderOneBanner1 .star:nth-child(5){ top: calc(50% - -100px); left: calc(50% - 250px); animation-delay: 1.8s;}
+.sliderOneBanner1 .star:nth-child(5)::before, .sliderOneBanner1 .star:nth-child(5)::after{ animation-delay: 1.8s;}
+
+/*Protfolio*/
+.PortfolioDetailsList1{padding: 0px !important; border: unset !important;}
+.PortfolioDetailsContent1 p:last-child{margin-bottom: 0;}
+@media screen and (max-width: 1024px){
+	.protfoliDetailsLeft1{width: 100% !important;}
+}
+.qlwapp-account:hover{color: #25599e !important;}
+
+
+.whatsAppIcon1{display: none;}
+.modalHoverColor h5, .modalHoverColor p{color: #000; margin-bottom: 0;}
+.modalHoverColor h5:hover, .modalHoverColor p:hover{color: #25599e !important;}
+.whatsAppIcon  .elementor-icon{ cursor: pointer;}
+
+.myWhatsAppContent.modal {  left: unset !important;  top: unset !important; width: fit-content !important;  align-items: end; bottom: 55px !important;  padding: 0 !important;}
+/* Modal content */
+.myWhatsAppContent .modal-content {  width: fit-content !important;}
+.myWhatsAppContent .close {  cursor: pointer;  font-size: 25px; width: 30px;  margin: 5px 10px 5px auto;   text-align: center;  border: 1px solid #fff;  border-radius: 5px;  color: #fff;   height: fit-content;}
+
+
+.about_section_1_Main.flip-container {  -webkit-perspective: 1000;  background: transparent;  margin: 0px;}
+.about_section_1_Main.flip-container:hover .flipper,  .about_section_1_Main.flip-container.hover .flipper {  -webkit-transform: rotateY(180deg);}
+.about_section_1_Main .flip-container,  .about_section_1_Main .front,  .about_section_1_Main .back,  .about_section_1_Main img { width: fit-content;  object-fit: cover;  height: auto;}
+.about_section_1_Main .flipper {  -webkit-transition: 1.5s;  -webkit-transform-style: preserve-3d;  position: relative;}
+.about_section_1_Main .front,
+.about_section_1_Main .back { -webkit-backface-visibility: hidden; position: absolute;  top: 0; left: 0;}
+.about_section_1_Main .front {  z-index: 2;}
+.about_section_1_Main .back {  -webkit-transform: rotateY(180deg);  background: #25599e;  padding: 15px;   height: 100%;}
+.about_section_1_Main .back li i:before{color: #fff;}
+.psmTechQuAbout1{ font-size: 25px; line-height: normal;}
+@media screen and (max-width: 1024px){
+	.psmTechQuAbout1{font-size: 20px !important; margin-bottom: 0}
+}
