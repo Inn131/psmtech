@@ -156,7 +156,7 @@
             <div class="col-lg-5 col-md-12">
                 <div class="single-contact-box">
                     <div class="contact-contetn">
-                        <h1><?php the_field('logo_img_head');  ?></h1>
+                        <h2><?php the_field('logo_img_head');  ?></h2>
                     </div>
                     <p><?php the_field('logo_img_text');  ?></p>
                 </div>
@@ -182,7 +182,7 @@
             <div class="col-lg-3 col-md-12">
                 <div class="single-contact-box">
                     <div class="contact-contetn">
-                        <h1><?php the_field('psmtech_experience_head');  ?></h1>
+                        <h2><?php the_field('psmtech_experience_head');  ?></h2>
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@
 <div class="contact-area style-three channel-partners">
     <div class="container">
         <div class="row add-white-bg align-items-center">
-            <h1><?php the_field('psmtech_channel_partner_head');  ?></h1>
+            <h2><?php the_field('psmtech_channel_partner_head');  ?></h2>
             <div class="col-lg-12 col-md-12">
                 <?php the_field('psmtech_channel_partner_icon'); ?>
             </div>
@@ -277,7 +277,7 @@
                 <div class="col-lg-6">
                   <div class="section-title style-two">
                     <h4><?php echo $sub_title; ?></h4>
-                    <h1><?php echo $heading; ?></h1>
+                    <h2><?php echo $heading; ?></h2>
                 </div>
             </div>
             <div class="col-lg-6 client-btn">
