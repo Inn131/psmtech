@@ -65,7 +65,7 @@
                             <?php endif; ?>
                             
                             <div class="about-shape-two">
-                                <img src="https://inngeniuspsm.com/psmtest/wp-content/uploads/2025/05/about-shape2.png" alt="">
+                                <img src="https://psmtech.com/wp-content/uploads/2025/05/about-shape2.png" alt="">
                             </div>
                         </div>
                     </div>

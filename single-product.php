@@ -690,14 +690,14 @@ if (have_rows('product_details_banner_section')) :
 				    				if ( ! empty( $android_app_link )) :
 				    					?>
 				    					<div class="col-lg-6">
-				    						<a href="<?php echo esc_url($android_app_link); ?>" target="_blank" ><img src="https://psmtech.inngeniuspsm.com/wp-content/uploads/2025/05/Android.png"></a>
+				    						<a href="<?php echo esc_url($android_app_link); ?>" target="_blank" ><img src="https://psmtech.com/wp-content/uploads/2025/05/Android.png"></a>
 				    					</div>
 				    				<?php endif; ?>
 				    				<?php
 				    				if (! empty( $ios_app_link ) ) :
 				    					?>
 				    					<div class="col-lg-6">
-				    						<a href="<?php echo esc_url($ios_app_link); ?>" target="_blank"><img src="https://psmtech.inngeniuspsm.com/wp-content/uploads/2025/05/IOS.png"></a>
+				    						<a href="<?php echo esc_url($ios_app_link); ?>" target="_blank"><img src="https://psmtech.com/wp-content/uploads/2025/05/IOS.png"></a>
 				    					</div>
 				    				<?php endif; ?>
 				    			</div>
