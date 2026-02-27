@@ -5,7 +5,7 @@ function psmtech_enqueue_styles() {
 
     // Enqueue extra style
     // wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'));
-    wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'), array(), '1.1.8');
+    wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'), array(), '1.2.1');
 
     // Enqueue child theme styles
     wp_enqueue_style('psmtech-child-bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
