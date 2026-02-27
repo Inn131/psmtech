@@ -20,7 +20,7 @@ function psmtech_enqueue_styles() {
     wp_enqueue_style('psmtech-child-megamenu-style', get_stylesheet_directory_uri() . '/css/megamenu.css');
     // wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css');
     wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css', array(),'1.2.3');
-    wp_enqueue_style('psmtech-child-revolution-style', get_stylesheet_directory_uri() . '/revolution/css/responsive.css');
+    wp_enqueue_style('psmtech-child-revolution-style', get_stylesheet_directory_uri() . '/revolution/css/rs6.css');
     wp_enqueue_style('psmtech-child-coustom-animation-style', get_stylesheet_directory_uri() . '/css/coustom-animation.css');
     wp_enqueue_style('date-ui-style', get_stylesheet_directory_uri() . '/css/date-ui.css');
     
