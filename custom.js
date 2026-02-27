@@ -28,7 +28,48 @@ jQuery(function($){
 });
 
 
-
+// jQuery(document).ready(function($) {
+//   $('.logo-Slider').slick({
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     dots: false,
+//     responsive: [
+//     {
+//       breakpoint: 1000,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         infinite: true
+//       }
+//     },
+//     {
+//       breakpoint: 800,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2
+//       }
+//     },
+//     {
+//       breakpoint: 320,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//   ]
+//   });
+// });
 
 $(document).ready(function(){
     // When the open modal button is clicked

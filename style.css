@@ -2771,7 +2771,7 @@ z-index: 1;
     margin: 0 0 5px;
 }
 
-.style-two.section-title h1 {
+.style-two.section-title h1, .style-two.section-title h2 {
     font-size: 42px;    
     font-weight: 700;
     line-height: 45px;
@@ -4724,7 +4724,7 @@ padding: 10px 10px 10px 10px;
 /*    margin-right: 60px;*/
 }
 
-.style-three .contact-contetn h1 {
+.style-three .contact-contetn h1, .style-three .contact-contetn h2 {
     font-size: 50px;
     font-weight: 700;
     line-height: 45px;
@@ -7342,7 +7342,7 @@ overflow: hidden;
 /*---=====================================================
    <!--Toptech Contact Area Css-->
 =========================================================---*/
-.contact-area.style-three.channel-partners h1
+.contact-area.style-three.channel-partners h1, .contact-area.style-three.channel-partners h2
 {    
     text-align: center;
     font-size: 42px;

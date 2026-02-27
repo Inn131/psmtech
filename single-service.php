@@ -152,7 +152,7 @@ if (have_rows('servive_details_banner_section')) :
 				<?php endif; ?>
 
 				<div class="button-group mt-3">
-					<a href="https://inngeniuspsm.com/psmtest/contact-us/" target="_blank" class="primary-button" >
+					<a href="https://psmtech.com/contact-us/" target="_blank" class="primary-button" >
 						Contact Us                                                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 						</svg>
