@@ -93,7 +93,7 @@
                         </div>
 
 
-                        <a href="<?php echo $detail_page_link; ?>" class="service-learn-more" style="background: var(--gradient-blue);">
+                        <a href="<?php echo the_permalink(); ?>" class="service-learn-more" style="background: var(--gradient-blue);">
                             <span>Discover Service</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white">
                                 <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"></path>
