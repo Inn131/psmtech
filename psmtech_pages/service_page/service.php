@@ -65,6 +65,7 @@
             
             while($services->have_posts()): $services->the_post();
                 $icon = get_field('service_logo_image');
+                $detail_page_link = get_field('detail_page_link');
                 $excerpt = get_field('service_home_and_about_section');
                 ?>
                 <article class="service-card">
@@ -92,7 +93,7 @@
                         </div>
 
 
-                        <a href="<?php the_permalink(); ?>" class="service-learn-more" style="background: var(--gradient-blue);">
+                        <a href="<?php echo the_permalink(); ?>" class="service-learn-more" style="background: var(--gradient-blue);">
                             <span>Discover Service</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white">
                                 <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"></path>

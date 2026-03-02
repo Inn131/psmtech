@@ -67,7 +67,7 @@ body {
 }
 p
 {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 28px;
     letter-spacing: 1px !important;
     color: var(--text-medium);
@@ -11469,7 +11469,7 @@ height: 100%;
     line-height: 28px;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
 }
 
