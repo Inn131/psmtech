@@ -170,20 +170,20 @@ p
 
 .banner-badge {
     display: inline-block;
-    padding: 0px 15px;
+    padding: 4px 14px;
     color: white;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     border-radius: 50px;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background: var(--gradient-red);
     box-shadow: 0 4px 15px rgba(238, 27, 37, 0.3);
 }
 
 .banner-title {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 3.8vw, 3.2rem);
     font-weight: 800;
     line-height: 1;
     margin-bottom: 25px;
@@ -216,7 +216,7 @@ p
     background: var(--gradient-blue);
     color: white;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 4px;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(37, 89, 158, 0.3);
@@ -260,7 +260,7 @@ p
     background: var(--base-red);
     color: white;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 4px;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(37, 89, 158, 0.3);
@@ -2685,7 +2685,7 @@ z-index: 1;
 } 
 
 .style-two .about-counter-title h4 {
-    font-size: 35px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     color: #ffffff;
     font-weight: 700;
     position: relative;
@@ -2765,14 +2765,21 @@ z-index: 1;
 }
 
 .style-two.section-title h4 {
-    font-size: 28px;
-    color: var(--base-blue);
-    font-weight: 600;
-    margin: 0 0 5px;
+    display: inline-block;
+    background: var(--gradient-red);
+    color: white;
+    padding: 0 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    width: max-content;
+    margin: 0;
 }
 
 .style-two.section-title h1, .style-two.section-title h2 {
-    font-size: 42px;    
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     font-weight: 700;
     line-height: 45px;
     color: var(--dark-navy);
@@ -4725,7 +4732,7 @@ padding: 10px 10px 10px 10px;
 }
 
 .style-three .contact-contetn h1, .style-three .contact-contetn h2 {
-    font-size: 50px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     font-weight: 700;
     line-height: 45px;
     color: var(--dark-navy);
@@ -5142,14 +5149,20 @@ padding: 10px 10px 10px 10px;
     margin-bottom: 27px;
 }
 .inner-style.section-title.left h4 {
-    font-size: 28px;
-    color: var(--base-blue);
-    font-weight: 600;
-    margin: 0 0 17px;
+    display: inline-block;
+    background: var(--gradient-red);
+    color: white;
+    padding: 0 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    width: max-content;
 }
 
 .inner-style.section-title.left h1 {
-    font-size: 42px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     font-weight: 700;
     line-height: 40px;
     color: var(--dark-navy);
@@ -7345,7 +7358,7 @@ overflow: hidden;
 .contact-area.style-three.channel-partners h1, .contact-area.style-three.channel-partners h2
 {    
     text-align: center;
-    font-size: 42px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     color: var(--dark-navy);
     background: linear-gradient(to right, var(--base-red), var(--base-blue));
     -webkit-text-fill-color: transparent;
@@ -7621,7 +7634,7 @@ overflow: hidden;
 }
 
 .team-details-area .team-member-title h4 {
-    font-size: 42px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     line-height: 42px;
     margin: 0;
     color: var(--dark-navy);
@@ -10397,7 +10410,7 @@ color: var(--base-red);
 }
 
 .ai-card-content h3 {
-    font-size: 3.2rem;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     color: var(--dark-navy);
     background: linear-gradient(to right, var(--base-red), var(--base-blue));
     margin-bottom: 0px;
@@ -10447,7 +10460,7 @@ color: var(--base-red);
     gap: 10px;
     padding: 12px 24px;
     color: white;
-    border-radius: 50px;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -11322,7 +11335,7 @@ height: 100%;
     font-weight: 600;
     text-decoration: none;
     padding: 8px 24px;
-    border-radius: 50px;
+    border-radius: 4px;
     margin-top: auto; /* Pushes button to bottom */
     transition: all 0.3s ease;
     width: fit-content;
@@ -11366,7 +11379,7 @@ height: 100%;
 
 .section-heading {
     color: var(--base-blue);
-    font-size: 50px;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
     font-weight: 700;
     line-height: 50px;
     position: relative;
@@ -11429,7 +11442,7 @@ height: 100%;
     display: flex;
     flex-direction: column;
     flex-grow: 1; /* Makes content area fill available space */
-    padding: 25px;
+    padding: 0 25px 25px 25px; 
     position: relative;
 }
 
@@ -11458,7 +11471,7 @@ height: 100%;
     background: linear-gradient(to right, var(--base-red), var(--base-blue));
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
     line-height: 32px;
@@ -11530,18 +11543,22 @@ height: 100%;
 .section-header {
     text-align: center;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-badge {
     display: inline-block;
     background: var(--gradient-red);
     color: white;
-    padding: 8px 28px;
+    padding: 4px 14px;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    width: max-content;
 }
 
 /*---------------------------------------------------- Timeline CSS START -------------------------------------------------*/
