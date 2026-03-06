@@ -5,7 +5,7 @@ function psmtech_enqueue_styles() {
 
     // Enqueue extra style
     // wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'));
-    wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'), array(), '1.2.4');
+    wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'), array(), '1.2.6');
 
     // Enqueue child theme styles
     wp_enqueue_style('psmtech-child-bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
@@ -19,9 +19,10 @@ function psmtech_enqueue_styles() {
     wp_enqueue_style('psmtech-child-twentytwenty-style', get_stylesheet_directory_uri() . '/css/twentytwenty.css');
     wp_enqueue_style('psmtech-child-megamenu-style', get_stylesheet_directory_uri() . '/css/megamenu.css');
     // wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css');
-    wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css', array(),'1.2.3');
-    wp_enqueue_style('psmtech-service-css-style', get_stylesheet_directory_uri() . '/css/service-css.css', array(),'1.2.3');
-    wp_enqueue_style('psmtech-new-home-css-style', get_stylesheet_directory_uri() . '/css/new-home.css', array(),'1.2.3');
+    wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css', array(),'1.2.6');
+    wp_enqueue_style('psmtech-products-css-style', get_stylesheet_directory_uri() . '/css/products-css.css', array(),'1.2.6');
+    wp_enqueue_style('psmtech-service-css-style', get_stylesheet_directory_uri() . '/css/service-css.css', array(),'1.2.6');
+    wp_enqueue_style('psmtech-new-home-css-style', get_stylesheet_directory_uri() . '/css/new-home.css', array(),'1.2.7');
     wp_enqueue_style('psmtech-child-revolution-style', get_stylesheet_directory_uri() . '/revolution/css/rs6.css');
     wp_enqueue_style('psmtech-child-coustom-animation-style', get_stylesheet_directory_uri() . '/css/coustom-animation.css');
     wp_enqueue_style('date-ui-style', get_stylesheet_directory_uri() . '/css/date-ui.css');

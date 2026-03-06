@@ -1,108 +1,151 @@
 <div class="site-main">
-<section>
-  <?php if( have_rows('service_banner') ): ?>
-    <?php while( have_rows('service_banner') ): the_row(); ?>
-
-      <?php 
-            // Get sub field values.
-      $banner_main = get_sub_field('banner_img');
-      $banner_text = get_sub_field('banner_text');
-      ?> 
-
-      <div class="inng-page-title-row style2">
-        <div class="inng-page-title-row-inner">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 me-auto">
-                <div class="inng-page-title-row-heading">
-                  <div class="page-title-heading">                    
-                    <h2 class="title postTitle"><?php the_title(); ?></h2>                                
-                  </div>
-                  <div class="page-title-description">                                
-                    <p><?php echo $banner_text; ?></p>
-                  </div>
-                </div>
-              </div>    
-              <div class="col-xl-4 col-lg-4 col-md-10 col-sm-12 me-auto">
-                <div class="inng-page-title-row-heading mobile">
-                    <div class="banner-vertical-block">
-                        <img src="<?php echo $banner_main ?>" style="background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center; object-fit: contain;">
-                    </div>
-                </div>
-            </div>
+<section class="svcs" id="services">
+  <div class="container">
+    <span class="stag a">PSM Tech — IT Services</span>
+    <h2 class="stitle">Hotel Low Voltage & IT <span class="aca">Infrastructure Services</span>
+    </h2>
+    <p class="sdesc">Certified installation of every technology system in your hotel — from the physical cabling backbone to servers, firewalls, cameras, and phone systems.</p>
+    <div class="g3">
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/structure-cabling-12.jpg" alt="Hotel structured cabling CAT6 CAT6A installation" loading="lazy" />
+          <span class="sbg">Low Voltage</span>
+        </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">🔌</div>
+            <h3>Structured Cabling Systems</h3>
           </div>
+          <p>Enterprise hotel structured cabling using CAT6 and CAT6A. Panduit-certified installations for all branded and non-branded US hotels, with full manufacturer warranty and post-installation certification testing.</p>
+          <div class="kr">
+            <span class="kw">CAT6 Cabling</span>
+            <span class="kw">CAT6A Hotel</span>
+            <span class="kw">Panduit Certified</span>
+            <span class="kw">Network Cabling</span>
+          </div>
+          <a href="https://psmtech.com/services/structure-cables/" target="_blank" class="sl">Learn More →</a>
         </div>
-      </div>                    
-    </div>
-  <?php endwhile; ?>
-<?php endif; ?>
-</section>
-
-
-<!--site-main start-->
-<section class="services-showcase">
-    <div class="container">
-
-        <?php if(have_rows('our_service_home')): while(have_rows('our_service_home')): the_row(); ?>
-            <div class="section-header">
-                <span class="section-badge"><?php the_sub_field('our_service_text'); ?></span>
-                <h2 class="section-heading"><?php the_sub_field('our_service_head'); ?></h2>
-                <div class="vibrant-divider">
-                    <div class="divider-dot"></div>
-                </div>
-            </div>
-        <?php endwhile; endif; ?>
-
-        <div class="services-grid">
-            <?php 
-            $services = new WP_Query(array(
-                'post_type' => 'service',
-                'posts_per_page' => -1,
-                'orderby' => 'menu_order'
-            ));
-            
-            while($services->have_posts()): $services->the_post();
-                $icon = get_field('service_logo_image');
-                $detail_page_link = get_field('detail_page_link');
-                $excerpt = get_field('service_home_and_about_section');
-                ?>
-                <article class="service-card">
-                    <div class="card-image-wrapper">
-                        <?php if(has_post_thumbnail()): ?>
-                            <?php the_post_thumbnail('large', array(
-                                'class' => 'service-featured-image',
-                                'alt' => get_the_title()
-                            )); ?>
-                        <?php endif; ?>
-                        <div class="image-overlay"></div>
-                    </div>
-                    
-                    <div class="card-content">
-                        <?php if($icon): ?>
-                            <div class="service-icon">
-                                <img src="<?php echo esc_url($icon); ?>" alt="<?php the_title(); ?> icon">
-                            </div>
-                        <?php endif; ?>
-                        
-                        <h3 class="service-title"><?php the_title(); ?></h3>
-                        
-                        <div class="service-description">
-                            <?php echo wp_kses_post($excerpt); ?>
-                        </div>
-
-
-                        <a href="<?php echo the_permalink(); ?>" class="service-learn-more" style="background: var(--gradient-blue);">
-                            <span>Discover Service</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white">
-                                <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            <?php endwhile; wp_reset_postdata(); ?>
+      </article>
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/IDF-MDF-Closet-Setup-2.webp" alt="IDF MDF closet hotel network room setup" loading="lazy" />
+          <span class="sbg">Infrastructure</span>
         </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">🗄️</div>
+            <h3>IDF & MDF Closet Setup</h3>
+          </div>
+          <p>Professional hotel IDF and MDF network room preparation with ICC racks, modular patch panels, and color-coded Keystone Jacks. Organized, labeled, and ready to scale for any hotel size.</p>
+          <div class="kr">
+            <span class="kw">IDF Setup</span>
+            <span class="kw">MDF Closet</span>
+            <span class="kw">Patch Panel</span>
+            <span class="kw">ICC Racks</span>
+          </div>
+          <a href="https://psmtech.com/services/idf-mdf-closet-setup/" target="_blank" class="sl">Learn More →</a>
+        </div>
+      </article>
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/Fiber-Connectivity-1.png" alt="Hotel fiber optic connectivity OM3 multimode" loading="lazy" />
+          <span class="sbg">Fiber</span>
+        </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">💡</div>
+            <h3>Fiber Optic Connectivity</h3>
+          </div>
+          <p>High-speed hotel fiber optic backbone using Multimode OM3 Aqua 12-strand fiber with professional fiber patch panels for maximum bandwidth and reliability across large hotel properties.</p>
+          <div class="kr">
+            <span class="kw">Fiber Optics</span>
+            <span class="kw">OM3 Multimode</span>
+            <span class="kw">Fiber Patch Panel</span>
+          </div>
+          <a href="https://psmtech.com/services/fiber-connectivity-solutions/" target="_blank" class="sl">Learn More →</a>
+        </div>
+      </article>
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/Surveillance-1.jpg" alt="Hotel CCTV IP camera surveillance system" loading="lazy" />
+          <span class="sbg">Security</span>
+        </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">📷</div>
+            <h3>CCTV & Hotel Surveillance</h3>
+          </div>
+          <p>Complete hotel CCTV and IP camera surveillance systems with motion detection, biometric access control, and 24/7 remote monitoring. Full coverage installed by certified technicians.</p>
+          <div class="kr">
+            <span class="kw">Hotel CCTV</span>
+            <span class="kw">IP Camera</span>
+            <span class="kw">Access Control</span>
+            <span class="kw">24/7 Monitoring</span>
+          </div>
+          <a href="https://psmtech.com/services/surveillance/" target="_blank" class="sl">Learn More →</a>
+        </div>
+      </article>
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/VoIP-Telephony-2.jpg" alt="Hotel telephone system VoIP PBX Phonesuite NEC Mitel" loading="lazy" />
+          <span class="sbg">Telephony</span>
+        </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">📞</div>
+            <h3>Hotel Telephone & VoIP Systems</h3>
+          </div>
+          <p>Full hotel telephony solutions including VoIP, digital PBX and analog systems. Authorized dealer for Phonesuite, NEC, Mitel, VTech and Grandstream hotel telephone sets.</p>
+          <div class="kr">
+            <span class="kw">Hotel VoIP</span>
+            <span class="kw">Phonesuite</span>
+            <span class="kw">NEC Mitel</span>
+            <span class="kw">Hotel PBX</span>
+          </div>
+          <a href="https://psmtech.com/services/telephony/" target="_blank" class="sl">Learn More →</a>
+        </div>
+      </article>
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/Smart-AV-2.jpg" alt="Hotel AV audio video design digital signage conference" loading="lazy" />
+          <span class="sbg">AV Design</span>
+        </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">📺</div>
+            <h3>Audio / Video (AV) Design</h3>
+          </div>
+          <p>Complete hotel A/V design from digital signage and video conferencing to in-room entertainment and ballroom AV systems. End-to-end design and installation for the best guest experience.</p>
+          <div class="kr">
+            <span class="kw">Hotel AV</span>
+            <span class="kw">Digital Signage</span>
+            <span class="kw">Video Conferencing</span>
+          </div>
+          <a href="https://psmtech.com/services/a-v-design/" target="_blank" class="sl">Learn More →</a>
+        </div>
+      </article>
+      <article class="sc">
+        <div class="si">
+          <img src="https://psmtech.com/wp-content/uploads/2026/02/SCSServerRoomRacks-scaled-1.jpg" alt="Hotel server room back office network firewall Cisco Fortinet" loading="lazy" />
+          <span class="sbg">IT / Network</span>
+        </div>
+        <div class="sb">
+          <div class="sb-head">
+            <div class="sico">🖥️</div>
+            <h3>IT Server & Back Office Network</h3>
+          </div>
+          <p>Secure hotel back-office networks with Cisco or Fortinet firewalls, Dell/HP/Lenovo servers, workstations, cloud backup and ongoing IT support. Everything behind the front desk, expertly engineered.</p>
+          <div class="kr">
+            <span class="kw">Hotel Server</span>
+            <span class="kw">Cisco Firewall</span>
+            <span class="kw">Fortinet</span>
+            <span class="kw">Cloud Backup</span>
+          </div>
+          <a href="https://psmtech.com/services/it-server-management/" target="_blank" class="sl">Learn More →</a>
+        </div>
+      </article>
     </div>
+  </div>
 </section>
+    
 </div>
