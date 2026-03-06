@@ -485,7 +485,7 @@ get_header();
 <section class="why">
   <div class="container">
     <span class="stag">Why Choose Us</span>
-    <h2 class="stitle">The Only <span style="color:var(--amber)">End-to-End</span> Hotel Technology Partner </h2>
+    <h2 class="stitle">The Only <span style="color:var(--teal)">End-to-End</span> Hotel Technology Partner </h2>
     <p class="sdesc">One relationship for your entire hotel technology stack — from the first network jack to the last cloud reconciliation. No hand-offs. No gaps.</p>
     <div class="wg">
       <div class="wc">

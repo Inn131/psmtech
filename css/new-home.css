@@ -4,7 +4,7 @@
   --primary-light: #2356a0;
   --red: #ee1b25;
   --red-light: #ee1b252e;
-  --teal: #2196f3;
+  --teal: #006dff;
   --teal-light:#03a9f4;
   --teal-pale: #e6eff9;
   --amber: #2196f3;
@@ -99,7 +99,7 @@ html {
   margin-bottom: 18px;
 }
 .hero h1 .ac {
-  color: var(--amber);
+  color: var(--teal);
 }
 .hero p {
   color: rgba(255, 255, 255, 0.72);
@@ -141,7 +141,7 @@ html {
   font-family: inherit;
 }
 .btn-amber {
-  background: var(--amber);
+  background: var(--teal);
   color: var(--white);
 }
 .btn-amber:hover {
@@ -308,7 +308,7 @@ html {
   color: var(--teal);
 }
 .stitle .aca {
-  color: var(--amber);
+  color: var(--teal);
 }
 .sdesc {
   color: var(--gray-600);
