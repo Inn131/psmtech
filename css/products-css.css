@@ -966,8 +966,7 @@
     flex-wrap: wrap;
   }
   .ota-cta__top-text { flex: 1; min-width: 240px; }
-  .ota-cta__h {
-    
+  .ota-cta__h {    
     font-size: clamp(1.9rem, 3.5vw, 2.7rem);
     font-weight: 900; color: var(--title);
     line-height: 1.2; margin: 6px 0 6px;
