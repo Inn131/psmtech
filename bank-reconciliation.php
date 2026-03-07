@@ -223,7 +223,7 @@ $how_it_works_section = get_field('how_it_works_section', $post->ID);
 
       <div class="bnkr-table-note">
         <i class="fas fa-lightbulb"></i>
-        <span><strong>AI Smart Suggestion:</strong> Possible delay in Visa settlement for 09/23 — check merchant batch cutoff time.</span>
+        <span><strong>Smart Suggestion:</strong> Possible delay in Visa settlement for 09/23 — check merchant batch cutoff time.</span>
       </div>
     </div>
 

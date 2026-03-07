@@ -336,6 +336,11 @@ $image = $objectives_section['image'] ?? '';
       <div class="col-lg-6 ota-reveal ota-d2">
         <div style="position:relative;">
           <div class="ota-obj-img-card">
+            <div class="ir" style="justify-content: center; margin-bottom: 10px;">
+          <span class="ic" style="background: #fff;"><img src="https://psmtech.com/wp-content/uploads/2026/03/booking.webp" alt="Booking.com"></span>
+          <span class="ic" style="background: #fff;"><img src="https://psmtech.com/wp-content/uploads/2026/03/ota1.webp" alt="Expedia"></span>
+          <span class="ic" style="background: #fff;"><img src="https://psmtech.com/wp-content/uploads/2026/03/ota2.webp" alt="CLC Corporate Lodging"></span>
+        </div>
             <?php if ($image): ?>
               <img src="<?php echo esc_url($image); ?>" alt="Financial data verification and reconciliation"/>
             <?php else: ?>

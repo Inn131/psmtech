@@ -560,10 +560,11 @@ get_header();
       <div>
         <p style="font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--gray-400);margin-bottom:12px;">Property Management Systems (PMS)</p>
         <div class="ir">
-          <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/oracle-hospitality-logo-E814B434C8-seeklogo.webp" alt="Opera (Oracle Hospitality)"></span>
+          <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/ASI-PMS-e1772795784761.png" alt="Anand Systems - ASI"></span>
           <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/pms2.webp" alt="PEP — Property Express Plus"></span>
-          <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/pms3.webp" alt="ChoiceAdvantage"></span>
-          <span class="ic">🔌 Any PMS System</span>
+          <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/pms3.webp" alt="Choice Advantage"></span>
+          <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/visual-matrix.png" alt="Visual Matrix PMS"></span>          
+          <span class="ic"><img src="https://psmtech.com/wp-content/uploads/2026/03/hotelkey.png" alt="Hotelkey PMS"></span>          
         </div>
       </div>
     </div>

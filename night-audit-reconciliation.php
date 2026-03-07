@@ -86,16 +86,6 @@ $image          = $hero_section['image'] ?? '';
               <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=720&q=80&auto=format&fit=crop" alt="Night Audit Reconciliation Dashboard"/>
             <?php endif; ?>
           </div>
-          <div class="nadr-hero-badge-1">
-            <div class="nadr-hb1-icon"><i class="fas fa-check-double"></i></div>
-            <div class="nadr-hb1-text">
-              <strong>Audit Complete ✅</strong>
-              <span>All transactions verified</span>
-            </div>
-          </div>
-          <div class="nadr-hero-badge-2">
-            <i class="fas fa-shield-alt"></i> Fraud Protected
-          </div>
         </div>
       </div>
 

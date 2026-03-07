@@ -4,7 +4,7 @@
   --primary-light: #2356a0;
   --red: #ee1b25;
   --red-light: #ee1b252e;
-  --teal: #006dff;
+  --teal: #24589E;
   --teal-light:#03a9f4;
   --teal-pale: #e6eff9;
   --amber: #2196f3;
@@ -671,7 +671,7 @@ height: 100%;
 .ints-logo
 {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 .ir {
   display: flex;

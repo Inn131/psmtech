@@ -47,7 +47,8 @@ body {
     --black: #000;
     --white: #fff;
     /*--theme: #7444FD;*/
-    --theme: #006dff;
+    /*--theme: #006dff;*/
+    --theme: #24589E;
     --theme2: #25599e;
     --theme3: rgb(0 80 200 / 5%);
     --title: #282C32;
