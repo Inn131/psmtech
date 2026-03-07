@@ -5,7 +5,7 @@ function psmtech_enqueue_styles() {
 
     // Enqueue extra style
     // wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'));
-    wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'), array(), '1.2.1');
+    wp_enqueue_style('psmtech-extra-style', get_theme_file_uri('style.css'), array(), '1.2.6');
 
     // Enqueue child theme styles
     wp_enqueue_style('psmtech-child-bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
@@ -19,8 +19,10 @@ function psmtech_enqueue_styles() {
     wp_enqueue_style('psmtech-child-twentytwenty-style', get_stylesheet_directory_uri() . '/css/twentytwenty.css');
     wp_enqueue_style('psmtech-child-megamenu-style', get_stylesheet_directory_uri() . '/css/megamenu.css');
     // wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css');
-    wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css', array(),'1.2.3');
-    wp_enqueue_style('psmtech-service-css-style', get_stylesheet_directory_uri() . '/css/service-css.css', array(),'1.2.3');
+    wp_enqueue_style('psmtech-child-responsive-style', get_stylesheet_directory_uri() . '/css/responsive.css', array(),'1.2.6');
+    wp_enqueue_style('psmtech-products-css-style', get_stylesheet_directory_uri() . '/css/products-css.css', array(),'1.2.6');
+    wp_enqueue_style('psmtech-service-css-style', get_stylesheet_directory_uri() . '/css/service-css.css', array(),'1.2.6');
+    wp_enqueue_style('psmtech-new-home-css-style', get_stylesheet_directory_uri() . '/css/new-home.css', array(),'1.2.7');
     wp_enqueue_style('psmtech-child-revolution-style', get_stylesheet_directory_uri() . '/revolution/css/rs6.css');
     wp_enqueue_style('psmtech-child-coustom-animation-style', get_stylesheet_directory_uri() . '/css/coustom-animation.css');
     wp_enqueue_style('date-ui-style', get_stylesheet_directory_uri() . '/css/date-ui.css');
@@ -291,13 +293,13 @@ add_action( 'wp_enqueue_scripts', 'enqueue_datetimepicker_assets' );
 
 
 /**
- * Add branded logo loader to WordPress
+ * Add branded logo loader to WordPress - Optimized version
  */
 function add_branded_loader() {
     // Get your logo URL (uses custom logo if set, otherwise falls back to placeholder)
     $logo_url = 'https://psmtech.com/wp-content/uploads/2025/04/psmtech-logo.png';
     ?>
-    <div class="logo-loader">
+    <div class="logo-loader" id="logo-loader">
         <img src="<?php echo esc_url($logo_url); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="pulse-logo">
         <div class="loader-progress"></div>
     </div>
@@ -314,7 +316,8 @@ function add_branded_loader() {
             justify-content: center;
             align-items: center;
             z-index: 999999;
-            transition: opacity 0.5s ease;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Prevents interaction issues */
         }
         .pulse-logo {
             width: 180px;
@@ -336,8 +339,8 @@ function add_branded_loader() {
             display: block;
             width: 0;
             height: 100%;
-            background: var(--base-blue);
-            animation: progress 2s ease-in-out forwards;
+            background: var(--base-blue, #0066cc);
+            animation: progress 1.5s ease-out forwards;
         }
         @keyframes pulse {
             0% { transform: scale(1); opacity: 1; }
@@ -346,24 +349,60 @@ function add_branded_loader() {
         }
         @keyframes progress {
             0% { width: 0; }
-            80% { width: 80%; }
             100% { width: 100%; }
+        }
+        
+        /* Fallback if JavaScript fails */
+        .logo-loader.loaded {
+            opacity: 0;
+            visibility: hidden;
         }
     </style>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                var loader = document.querySelector('.logo-loader');
-                if(loader) {
-                    loader.style.opacity = '0';
-                    setTimeout(function() { 
-                        loader.style.display = 'none'; 
-                    }, 500);
+    (function() {
+        // Store loader element
+        var loader = document.getElementById('logo-loader');
+        if (!loader) return;
+        
+        // Function to hide loader
+        function hideLoader() {
+            // Add loaded class for CSS transition
+            loader.classList.add('loaded');
+            
+            // Remove from DOM after transition
+            setTimeout(function() { 
+                if (loader && loader.parentNode) {
+                    loader.parentNode.removeChild(loader);
                 }
-            }, 1000);
+            }, 300);
+        }
+        
+        // Case 1: Page already loaded (unlikely but possible)
+        if (document.readyState === 'complete') {
+            hideLoader();
+            return;
+        }
+        
+        // Case 2: Wait for page load
+        window.addEventListener('load', function() {
+            // Add small delay to ensure smooth transition (0.1s instead of 1s)
+            setTimeout(hideLoader, 100);
         });
-    });
+        
+        // Case 3: Safety timeout - hide after 5 seconds regardless
+        // Prevents loader getting stuck if load event doesn't fire properly
+        setTimeout(function() {
+            if (loader && !loader.classList.contains('loaded')) {
+                hideLoader();
+            }
+        }, 5000);
+        
+        // Optional: Hide loader when DOM is ready but not all resources loaded
+        // (Useful for slow images/videos)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Can hide earlier if you want, but load event is safer
+        });
+    })();
     </script>
     <?php
 }
